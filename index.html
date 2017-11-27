@@ -1,17 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Etch Test</title>
-    <style media="screen">
-      body{
-        width: 100%;
-        background-color: black;
-      }
-    </style>
-  </head>
-  <body>
-<img src="img/Etch-Test.gif" alt="WHERE'D IT GO?" style="width: 100%">
-<img src="img/Etch-Test-2.gif" alt="WHERE'D IT GO?" style="width: 100%">
-  </body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed"
+        rel="stylesheet">
+<style>
+
+body{
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+}
+.left {
+  background-color:black;
+  padding:20px;
+  float:left;
+  width:20%;/*The width is 20%, by default*/
+}
+.main {
+  background-color:black;
+  padding:20px;
+  float:left;
+  width:40%;/*The width is 60%, by default*/
+}
+.right {
+  background-color:black;
+  padding:20px;
+  float:left;
+  width:40%;/*The width is 20%, by default*/
+}
+img{
+  width: 100%;
+}
+
+h1{
+  font-family: 'Overpass Mono', monospace;
+  font-weight: normal;
+  font-size: 20pt;
+  margin-top: 2%;
+  /*padding-left: 20px;*/
+  background-color: orange;
+}
+
+p{
+  font-family: 'Barlow Condensed', sans-serif;
+  /*padding-left: 20px;*/
+  /*padding-right: 20px;*/
+  font-size: 16pt;
+  line-height: 20pt;
+  color: orange;
+  text-align: left;
+}
+
+/*Use a media query to add a break point at 800px:*/
+@media (max-width:800px) {
+  .left, .main, .right {
+    width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="left">
+    <h1>Bottle Etching Animation</h1>
+    <p>Initial tests for an animation project for Aberdeenshire Council, to raise awareness of the recycling
+       process and encourage Aberdeenshire residents to work together to preserve the environment. The idea
+       is </p>
+  </div>
+<div class="main">
+  <img src="img/Etch-Test-2.gif" alt="wow" />
+</div>
+<div class="right">
+    <img src="img/Etch-Test.gif" alt="WHERE DID DROSTEN GO?"/>
+</div>
+
+
+
+
+</body>
 </html>
