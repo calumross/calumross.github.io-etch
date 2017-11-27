@@ -2,16 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Etch Test</title>
+    <title>Etch2</title>
     <style media="screen">
-      body{
-        width: 100%;
-        background-color: black;
-      }
+    body{
+      background-color: black;
+    }
+    #wrapper {
+    max-width: 1050px;
+    margin: 60px auto 60px auto;
+    background-color: black;
+    }
+    .itemwrapper {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+    }
+    img {
+    max-width: 95%;
+    height: auto;
+    }
+    #outer {
+    width:80%;/* demo*/
+    margin:auto;/* demo*/
+    display:flex;
+    flex-wrap:wrap;
+    }
+    #outer>div {flex:1;}
+    #outer>div>img {
+      width:100%;
+      min-width:200px;/* demo*/
+    }
     </style>
   </head>
   <body>
-<img src="img/Etch-Test.gif" alt="WHERE'D IT GO?">
-<img src="img/Etch-Test-2.gif" alt="WHERE'D IT GO?">
+    <div id="wrapper">
+  <div id="outer">
+    <div class="itemwrapper">
+      <img src="img/Etch-Test.gif" alt="WHERE DID DROSTEN GO?"/>
+    </div>
+    <div class="itemwrapper">
+      <img src="img/Etch-Test-2.gif" alt="wow" />
+    </div>
+  </div>
+</div>
   </body>
 </html>
